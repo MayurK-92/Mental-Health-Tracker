@@ -83,9 +83,9 @@ const Index = () => {
 
       {/* Hero Section */}
       <motion.div variants={item} className="gradient-hero rounded-3xl p-8 md:p-12 mb-10 relative overflow-hidden">
-        <div className="absolute top-4 right-6 text-4xl animate-float">🌈</div>
-        <div className="absolute bottom-6 right-20 text-3xl animate-float" style={{ animationDelay: "0.5s" }}>⭐</div>
-        <div className="absolute top-6 right-1/3 text-3xl animate-float" style={{ animationDelay: "1s" }}>💜</div>
+        <div className="hidden sm:block absolute top-4 right-6 text-4xl animate-float">🌈</div>
+        <div className="hidden sm:block absolute bottom-6 right-20 text-3xl animate-float" style={{ animationDelay: "0.5s" }}>⭐</div>
+        <div className="hidden sm:block absolute top-6 right-1/3 text-3xl animate-float" style={{ animationDelay: "1s" }}>💜</div>
 
         <div className="relative z-10 w-full flex flex-col items-center text-center">
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold font-display text-foreground mb-2">
