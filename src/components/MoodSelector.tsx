@@ -23,14 +23,14 @@ const MoodSelector = ({ onSelect, selected }: MoodSelectorProps) => {
   };
 
   return (
-    <div className="flex justify-center gap-2 w-full">
+    <div className="flex flex-wrap justify-center gap-2 w-full sm:flex-nowrap">
       {moods.map((mood) => (
         <motion.button
           key={mood.value}
           whileTap={{ scale: 0.9 }}
           whileHover={{ scale: 1.05 }}
           onClick={() => handleSelect(mood)}
-          className={`flex items-center justify-center gap-1 px-2.5 py-2 rounded-full border-2 transition-all font-semibold text-xs whitespace-nowrap flex-1 min-w-0 ${
+          className={`flex items-center justify-center gap-1 px-3 py-2 rounded-full border-2 transition-all font-semibold text-xs whitespace-nowrap flex-auto sm:flex-1 min-w-[80px] sm:min-w-0 ${
             selectedMood === mood.value
               ? `${mood.color} border-current shadow-soft`
               : "bg-card border-border text-muted-foreground hover:border-primary/30"
